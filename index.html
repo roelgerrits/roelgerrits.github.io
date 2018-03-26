@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Hello World</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>roelgerrits.net</title>
+    <meta name="description" content="Personal Page of Roel Gerrits">
+    <meta name="keywords" content="Roel Gerrits">
+    
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-<body>
-Hello World!
-</body>
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="Home"></a>
+        </div>
 
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+            <li><a href="about#" data-nav-section="about">About</a></li>
+            <li><a href="links#" data-nav-section="links">Links</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="probootstrap-hero" style="background-image: url(img/background.jpeg);" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="probootstrap-heading probootstrap-animate">roelgerrits.NET</h1>
+            <div class="probootstrap-subheading center">
+              <p class="probootstrap-animate">
+                <a href="#about" data-nav-section="about" role="button" class="btn btn-primary smoothscroll">About</a>
+                <a href="#links" data-nav-section="links" role="button" class="btn btn-default smoothscroll">Links</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section" id="about" data-section="about">
+      <div class="container">
+        <div class="row text-center mb100">
+          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+            <h2 class="mb30 text-black probootstrap-heading">About</h2>
+            <p>Roel Gerrits, Software Developer. <br/>
+               For more information see links to twitter, linkedin and github below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <footer class="probootstrap-footer" id="links" data-section="links" style="background-color:#2b2d32">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="probootstrap-social">
+              <a href="https://www.twitter.com/roelgerrits"><i class="icon-twitter"></i></a> 
+              <a href="https://www.linkedin.com/in/roelgerrits/"><i class="icon-linkedin"></i></a>
+              <a href="https://www.github.com/roelgerrits/"><i class="icon-github"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            &copy; 2018 <a href="https://www.roelgerrits.net/">www.roelgerrits.net</a><br>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
