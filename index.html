@@ -15,6 +15,9 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </head>
   <body>
     
@@ -75,7 +78,6 @@
         <div class="row">
           <div class="col-md-12">
             <p class="probootstrap-social">
-              <a href="https://www.twitter.com/roelgerrits"><i class="icon-twitter"></i></a> 
               <a href="https://www.linkedin.com/in/roelgerrits/"><i class="icon-linkedin"></i></a>
               <a href="https://www.github.com/roelgerrits/"><i class="icon-github"></i></a>
             </p>
@@ -83,7 +85,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            &copy; 2022 <a href="https://www.roelgerrits.net/">www.roelgerrits.net</a><br>
+            &copy; <span id="year"> <a href="https://www.roelgerrits.net/">www.roelgerrits.net</a><br>
           </div>
         </div>
       </div>
